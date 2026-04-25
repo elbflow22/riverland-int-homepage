@@ -7,6 +7,25 @@
 <meta name="description" content="Riverland International GmbH ist das Unternehmen hinter OG ASIA — wir machen authentische Produkte aus ganz Asien für Europa zugänglich." />
 <meta name="theme-color" content="#004FFF" />
 
+<!-- Favicon & app icons -->
+<link rel="icon" type="image/svg+xml" href="assets/logo-symbol.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/favicon.png" />
+
+<!-- Open Graph (social sharing) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Riverland International GmbH — Europas Online Asia Shop" />
+<meta property="og:description" content="Das Unternehmen hinter OG ASIA. Wir machen authentische Produkte aus ganz Asien für Europa zugänglich." />
+<meta property="og:image" content="assets/og-image.jpg" />
+<meta property="og:url" content="https://riverland-int.com/" />
+<meta property="og:locale" content="de_DE" />
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Riverland International GmbH" />
+<meta name="twitter:description" content="Europas Online Asia Shop. Das Unternehmen hinter OG ASIA." />
+<meta name="twitter:image" content="assets/og-image.jpg" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -85,17 +104,8 @@
   .logo-mark {
     width: 32px;
     height: 32px;
-    background: var(--brand);
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .logo-mark::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, transparent 50%, rgba(255,255,255,0.25) 50%);
+    display: block;
+    object-fit: contain;
   }
 
   .logo-text {
@@ -768,26 +778,51 @@
 
   footer {
     border-top: 1px solid var(--line);
-    padding: 32px 0;
+    padding: 56px 0 40px;
     background: var(--paper-warm);
   }
 
   .footer-inner {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    width: 100%;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .footer-wordmark {
+    height: 36px;
+    width: auto;
+    display: block;
+    max-width: 100%;
+  }
+
+  .footer-meta {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     flex-wrap: wrap;
     gap: 16px;
     font-size: 13px;
     color: var(--ink-soft);
   }
 
-  .footer-inner a {
+  .footer-meta a {
     color: var(--ink-soft);
     text-decoration: none;
   }
 
-  .footer-inner a:hover { color: var(--brand); }
+  .footer-meta a:hover { color: var(--brand); }
+
+  @media (max-width: 640px) {
+    .footer-wordmark { height: 28px; }
+  }
 
   /* ========================
      Reveal on scroll
@@ -812,7 +847,7 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a href="#top" class="logo" aria-label="Riverland International">
-      <span class="logo-mark" aria-hidden="true"></span>
+      <img src="assets/logo-symbol.svg" alt="" class="logo-mark" width="32" height="32" />
       <span class="logo-text">Riverland <span>International</span></span>
     </a>
     <nav class="topnav" aria-label="Hauptnavigation">
@@ -1153,8 +1188,13 @@
      ======================== -->
 <footer>
   <div class="wrap footer-inner">
-    <div>© <span id="year"></span> Riverland International GmbH. Alle Rechte vorbehalten.</div>
-    <div>Hamburg · Deutschland</div>
+    <div class="footer-brand">
+      <img src="assets/logo-wordmark.png" alt="Riverland International" class="footer-wordmark" />
+    </div>
+    <div class="footer-meta">
+      <div>© <span id="year"></span> Riverland International GmbH. Alle Rechte vorbehalten.</div>
+      <div>Hamburg · Deutschland</div>
+    </div>
   </div>
 </footer>
 
