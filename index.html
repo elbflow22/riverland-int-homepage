@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Riverland International GmbH — Europas Online Asia Shop</title>
-<meta name="description" content="Riverland International GmbH ist das Unternehmen hinter OG ASIA — wir machen authentische Produkte aus ganz Asien für Europa zugänglich." />
+<title>Riverland International GmbH | Handel &amp; Produktdaten</title>
+<meta name="description" content="Riverland International GmbH, Hamburg: Online-Handel mit asiatischen Lebensmitteln über OG ASIA und Prüfung von Produktdaten für Lebensmittelhersteller." />
 <meta name="theme-color" content="#004FFF" />
 
 <!-- Favicon & app icons -->
@@ -14,16 +14,17 @@
 
 <!-- Open Graph (social sharing) -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Riverland International GmbH — Europas Online Asia Shop" />
-<meta property="og:description" content="Das Unternehmen hinter OG ASIA. Wir machen authentische Produkte aus ganz Asien für Europa zugänglich." />
+<meta property="og:title" content="Riverland International GmbH — Online-Handel und Produktdatenqualität" />
+<meta property="og:description" content="Zwei Geschäftsbereiche: OG ASIA, unser Online-Handel mit asiatischen Lebensmitteln, und Produktdaten-Prüfung für Lebensmittelhersteller." />
 <meta property="og:image" content="assets/og-image.jpg" />
-<meta property="og:url" content="https://riverland-int.com/" />
+<meta property="og:url" content="https://www.riverland-int.com/" />
+<link rel="canonical" href="https://www.riverland-int.com/" />
 <meta property="og:locale" content="de_DE" />
 
 <!-- Twitter / X card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Riverland International GmbH" />
-<meta name="twitter:description" content="Europas Online Asia Shop. Das Unternehmen hinter OG ASIA." />
+<meta name="twitter:description" content="Online-Handel mit asiatischen Lebensmitteln (OG ASIA) und Produktdatenqualität für Lebensmittelhersteller." />
 <meta name="twitter:image" content="assets/og-image.jpg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -181,11 +182,11 @@
   .hero h1 {
     font-family: var(--display);
     font-weight: 400;
-    font-size: clamp(40px, 7vw, 88px);
+    font-size: clamp(38px, 6vw, 76px);
     line-height: 1.02;
     letter-spacing: -0.025em;
     margin-bottom: 32px;
-    max-width: 18ch;
+    max-width: 20ch;
   }
 
   .hero h1 em {
@@ -432,6 +433,140 @@
     margin-top: 8px;
   }
 
+
+  /* ========================
+     Hero note (Briefempfänger)
+     ======================== */
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 28px;
+  }
+
+  .hero-note {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-top: 48px;
+    max-width: 640px;
+    padding: 18px 22px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--brand);
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  .hero-note strong { color: var(--ink); font-weight: 600; }
+
+  .hero-note a {
+    color: var(--brand);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  .hero-note a:hover { color: var(--brand-dark); }
+
+  .hero-note svg { flex: none; margin-top: 3px; color: var(--brand); }
+
+  /* ========================
+     Geschäftsbereiche
+     ======================== */
+  .about-intro {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin-bottom: 64px;
+  }
+
+  .divisions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  @media (max-width: 880px) {
+    .divisions { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+  .divisions .about-card { display: flex; flex-direction: column; }
+
+  .division-kicker {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 4px;
+  }
+
+  .division-list {
+    list-style: none;
+    margin-top: 20px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .division-list li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  .division-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 1px;
+    background: var(--brand);
+  }
+
+  .division-list strong { color: var(--ink); font-weight: 600; }
+
+  .division-foot {
+    margin-top: auto;
+    padding-top: 32px;
+  }
+
+  .division-foot .stat-row { margin-top: 0; }
+
+  .division-person {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
+  .division-person strong { color: var(--ink); font-weight: 600; }
+
+  .division-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+
+  .divisions .card-link { margin-top: 20px; }
+
+  .division-note {
+    margin-top: 24px;
+    padding: 16px 18px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-size: 14px !important;
+  }
+
+  .division-note strong { color: var(--ink); font-weight: 600; }
+
   /* ========================
      M.A.V. — Mission, Aims, Values
      ======================== */
@@ -452,7 +587,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: end;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
@@ -507,11 +642,12 @@
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 60px;
-    padding: 60px 0;
+    padding: 48px 0;
     border-top: 1px solid rgba(255,255,255,0.1);
   }
 
   .mav-block:first-of-type { border-top: none; padding-top: 0; }
+  .mav-lockup + .mav-block { border-top: none; padding-top: 0; }
 
   @media (max-width: 880px) {
     .mav-block { grid-template-columns: 1fr; gap: 24px; padding: 48px 0; }
@@ -632,11 +768,11 @@
 
   .values-list li {
     background: var(--ink);
-    padding: 28px;
+    padding: 20px 28px;
     display: grid;
     grid-template-columns: 80px 1fr;
     gap: 32px;
-    align-items: start;
+    align-items: center;
     transition: background 0.3s;
   }
 
@@ -669,10 +805,10 @@
   }
 
   .values-list .v-tagline {
-    font-size: 13px;
-    color: var(--brand);
+    font-size: 14px;
+    color: #6B92FF;
     font-style: italic;
-    margin-bottom: 14px;
+    margin-bottom: 0;
     letter-spacing: 0.01em;
   }
 
@@ -687,8 +823,12 @@
      ======================== */
   .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+
+  @media (max-width: 1080px) {
+    .contact-grid { grid-template-columns: 1fr 1fr; }
   }
 
   @media (max-width: 880px) {
@@ -851,7 +991,7 @@
       <span class="logo-text">Riverland <span>International</span></span>
     </a>
     <nav class="topnav" aria-label="Hauptnavigation">
-      <a href="#about">Unternehmen</a>
+      <a href="#about">Geschäftsbereiche</a>
       <a href="#mav">M.A.V.</a>
       <a href="#contact">Kontakt</a>
       <a href="#impressum">Impressum</a>
@@ -865,18 +1005,36 @@
 <section class="hero" id="top">
   <div class="wrap">
     <div class="eyebrow">Riverland International GmbH · Hamburg</div>
-    <h1 class="reveal">Europas Online <em>Asia Shop</em>.</h1>
+    <h1 class="reveal">Online-Handel und <em>Produktdatenqualität</em> für die Lebensmittelbranche.</h1>
     <p class="hero-lead reveal">
-      Durch unsere Retail-Marke <a href="https://join.ogasia.de/" target="_blank" rel="noopener" class="brand-link"><strong>OG ASIA</strong></a> machen wir authentische
-      Produkte aus ganz Asien für unsere Kunden in Europa zugänglich.
+      Zwei Geschäftsbereiche unter einem Dach: Mit <a href="https://join.ogasia.de/" target="_blank" rel="noopener" class="brand-link"><strong>OG ASIA</strong></a>
+      verkaufen wir asiatische Lebensmittel über Amazon und TikTok Shop. Für
+      Lebensmittelhersteller erfassen wir Abweichungen zwischen ihren Produktangaben und
+      den Angaben bei Händlern und Marktplätzen und begleiten die Bereinigung.
     </p>
-    <a href="#about" class="hero-cta reveal">
-      Mehr erfahren
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="5" y1="12" x2="19" y2="12"></line>
-        <polyline points="12 5 19 12 12 19"></polyline>
+    <div class="hero-actions reveal">
+      <a href="#about" class="hero-cta">
+        Geschäftsbereiche ansehen
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+    <!-- Hinweis für Empfänger der Briefkampagne. Angebotsname mit den Briefen abgleichen. -->
+    <p class="hero-note reveal">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <polyline points="3 7 12 13 21 7"></polyline>
       </svg>
-    </a>
+      <span>
+        <strong>Sie haben einen Brief von Riverland erhalten?</strong>
+        Auf pascalweihrauch.de erläutern wir die Kanal-Lückenanalyse und zeigen, wie wir
+        Abweichungen in Produktdaten untersuchen. Dort können Sie auch ein persönliches
+        Erstgespräch vereinbaren.
+        <a href="https://pascalweihrauch.de/#leistungen" target="_blank" rel="noopener">Zur Kanal-Lückenanalyse&nbsp;→</a>
+      </span>
+    </p>
   </div>
 </section>
 
@@ -903,55 +1061,78 @@
      ======================== -->
 <section id="about">
   <div class="wrap">
-    <div class="section-label"><span class="num">01</span>Über uns</div>
-    <h2 class="reveal">Authentizität, <em>Qualität</em> und Nachhaltigkeit — direkt aus Asien.</h2>
+    <div class="section-label"><span class="num">01</span>Unternehmen &amp; Geschäftsbereiche</div>
+    <h2 class="reveal">Zwei Geschäftsbereiche, <em>ein</em> gemeinsamer Ursprung.</h2>
+    <p class="about-intro reveal">
+      Unser Team verkauft seit 2020 Lebensmittel online, seit 2024 unter dem Dach der
+      Riverland International GmbH. Daraus sind zwei Geschäftsbereiche entstanden: der
+      Online-Handel mit asiatischen Lebensmitteln unter unserer Marke OG ASIA und die
+      Prüfung und Bereinigung von Produktdaten für Lebensmittelhersteller.
+    </p>
 
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>
-          Die Riverland International GmbH ist das Unternehmen hinter der Handelsmarke
-          OG ASIA, unserer Retail-Marke für asiatische Produkte auf Amazon Europa.
-          Wir machen authentische Produkte zugänglich, damit jeder Kultur und Geschmack
-          aus Asien neu entdecken kann — egal, wo er lebt.
-        </p>
-        <p>
-          Mit einem vielfältigen Sortiment an Lebensmitteln und Marken aus Vietnam,
-          Korea, Japan, China und Thailand steht Riverland für Authentizität, Qualität
-          und Nachhaltigkeit. Wir erweitern kontinuierlich unser E-Commerce-Angebot
-          und fördern den interkulturellen Austausch in Europa.
-        </p>
-      </div>
-
-      <aside class="about-card reveal">
-        <span class="about-card-badge">Unsere Marke</span>
+    <div class="divisions">
+      <!-- Geschäftsbereich 1: Online-Handel -->
+      <article class="about-card reveal">
+        <span class="about-card-badge">Online-Handel</span>
         <h3>OG ASIA</h3>
         <p>
-          Unsere Retail-Marke auf Amazon Europa und TikTok Shop. Kuratierte
-          asiatische Lebensmittel und Lifestyle-Produkte — von Sojasaucen und
-          Reisspezialitäten bis hin zu Snacks, Tees und Küchenutensilien.
+          Unter OG ASIA verkaufen wir asiatische Lebensmittel über Amazon und TikTok Shop.
+          Das Sortiment umfasst Produkte aus Vietnam, Korea, Japan, China und Thailand —
+          von Sojasaucen und Reisspezialitäten bis hin zu Snacks und Tees, dazu
+          Küchenutensilien.
         </p>
         <a href="https://join.ogasia.de/" target="_blank" rel="noopener" class="card-link">
           OG ASIA entdecken
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
         </a>
-        <div class="stat-row">
-          <div class="stat">
-            <span class="num">5</span>
-            <div class="lbl">Herkunfts­länder</div>
-          </div>
-          <div class="stat">
-            <span class="num">2</span>
-            <div class="lbl">Vertriebs­kanäle</div>
-          </div>
-          <div class="stat">
-            <span class="num">EU</span>
-            <div class="lbl">Marktraum</div>
-          </div>
+      </article>
+
+      <!-- Geschäftsbereich 2: Produktdatenqualität -->
+      <article class="about-card reveal" id="produktdaten">
+        <span class="about-card-badge">Produktdatenqualität</span>
+        <h3>Produktdaten für Lebensmittelhersteller</h3>
+        <p>
+          Durch unseren eigenen Online-Handel kennen wir die Anforderungen an
+          Produktinformationen auf digitalen Vertriebskanälen aus der Praxis. Wir
+          unterstützen Lebensmittelhersteller dabei, Abweichungen zwischen ihren
+          Produktangaben und öffentlich sichtbaren Händler- und Marktplatzinformationen
+          systematisch zu erfassen und ihre Bereinigung vorzubereiten oder zu begleiten.
+        </p>
+        <ul class="division-list">
+          <li><strong>Analyse:</strong> Produktangaben kanalübergreifend vergleichen, Abweichungen dokumentieren und mit Fundstellen belegen.</li>
+          <li><strong>Bereinigung:</strong> Korrekturen vorbereiten oder, sofern die erforderlichen Zugriffsrechte vorliegen, umsetzen und den Bearbeitungsstand nachvollziehbar dokumentieren.</li>
+        </ul>
+        <p class="division-note">
+          <strong>Vertraulichkeit:</strong> Kundeninformationen behandeln wir vertraulich und
+          verwenden sie ausschließlich zur Durchführung des vereinbarten Auftrags. Eine
+          Nutzung für unseren eigenen Handelsbereich ist ausgeschlossen. Auf Wunsch
+          vereinbaren wir die Vertraulichkeit vor Projektbeginn zusätzlich schriftlich.
+        </p>
+        <div class="division-links">
+          <a href="https://pascalweihrauch.de/#leistungen" target="_blank" rel="noopener" class="card-link">
+            Leistungen auf pascalweihrauch.de
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a href="https://pascalweihrauch.de/termin/" target="_blank" rel="noopener" class="card-link">
+            Erstgespräch vereinbaren
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
         </div>
-      </aside>
+        <div class="division-foot">
+          <p class="division-person">
+            Ansprechpartner: <strong>Pascal Weihrauch</strong>, Geschäftsführer
+          </p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -961,7 +1142,7 @@
      ======================== -->
 <section id="mav" class="mav">
   <div class="wrap">
-    <div class="section-label"><span class="num">02</span>Riverland M.A.V.</div>
+    <div class="section-label"><span class="num">02</span>Unsere Wurzeln · Mission &amp; Werte von OG ASIA</div>
 
     <div class="mav-lockup">
       <div class="mav-monogram reveal">
@@ -969,11 +1150,10 @@
       </div>
       <div class="mav-intro reveal">
         <p>
-          <strong style="color: var(--paper);">Mission</strong> (the Why),
-          <strong style="color: var(--paper);">Aims</strong> (the What), and
-          <strong style="color: var(--paper);">Values</strong> (the How) —
-          our north star at Riverland International. The framework that defines
-          why we exist, what we are building, and how we behave along the way.
+          Our original <strong style="color: var(--paper);">Mission, Aims &amp; Values</strong>
+          framework was developed in 2025 for OG ASIA. Below are the mission and guiding
+          principles of our e-commerce business. The complete framework is available in
+          the original deck.
         </p>
         <a href="https://docs.google.com/presentation/d/1RPb1WU5kaRGi3IYL81hkL128w0zrfj65R_dRsGlwLrA/edit?slide=id.p#slide=id.p"
            target="_blank" rel="noopener" class="mav-deck-link">
@@ -1001,28 +1181,6 @@
       </div>
     </div>
 
-    <!-- AIMS -->
-    <div class="mav-block reveal">
-      <div class="mav-block-head">
-        <div class="mav-letter">A.</div>
-        <h3>Aims</h3>
-        <div class="mav-tag">The What — our long-term objectives</div>
-      </div>
-      <div class="mav-block-body">
-        <ol class="aims-list" aria-label="Our aims">
-          <li><p>Enrich marketplaces with authentic products.</p></li>
-          <li><p>Grow the e-commerce selection for Asian groceries.</p></li>
-          <li><p>Advance standards for efficient and sustainable fulfillment processes.</p></li>
-        </ol>
-        <p class="aims-tagline">
-          Becoming <strong>Europe's Online Asian Shop</strong> — by continuously
-          extending our authentic product selection and delivering consistent,
-          reliable quality to create lasting value for our customers and our
-          stakeholders.
-        </p>
-      </div>
-    </div>
-
     <!-- VALUES -->
     <div class="mav-block reveal">
       <div class="mav-block-head">
@@ -1037,7 +1195,6 @@
             <div>
               <h4>Ownership</h4>
               <div class="v-tagline">Own your work.</div>
-              <p>We trust our judgment, we act with intention, and we hold ourselves accountable to the highest standards.</p>
             </div>
           </li>
           <li>
@@ -1045,7 +1202,6 @@
             <div>
               <h4>Action-bias</h4>
               <div class="v-tagline">Think fast, act quick.</div>
-              <p>We don't wait — we move. We seize momentum, take smart risks, and get things done. Perfection can wait — progress can't. When it's not working, we fix it fast and keep pushing forward.</p>
             </div>
           </li>
           <li>
@@ -1053,7 +1209,6 @@
             <div>
               <h4>Growth-mindset</h4>
               <div class="v-tagline">Learn from outcomes, keep improving.</div>
-              <p>Keeping an open mind and always looking for the truth — it's not about being right or wrong; we're always looking for that "better way" in everything we do.</p>
             </div>
           </li>
           <li>
@@ -1061,7 +1216,6 @@
             <div>
               <h4>Integrity</h4>
               <div class="v-tagline">Striving for personal excellence.</div>
-              <p>Giving everything we do our very best, being true to ourselves and everyone with whom we come into contact. It's about being whole, honest, and principled — even when no one is watching.</p>
             </div>
           </li>
           <li>
@@ -1069,7 +1223,6 @@
             <div>
               <h4>Simplicity</h4>
               <div class="v-tagline">Simplify to amplify.</div>
-              <p>We remove friction, streamline processes, and communicate clearly to show what really matters — for ourselves, our team, and our customers. We simplify to amplify.</p>
             </div>
           </li>
         </ol>
@@ -1114,7 +1267,29 @@
           </div>
           <div class="contact-row">
             <dt>Funktion</dt>
-            <dd>Versand und Fulfillment für OG ASIA in ganz Europa.</dd>
+            <dd>Lagerhaltung, Versand und Fulfillment für OG ASIA.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="contact-block">
+        <h3>Produktdatenqualität</h3>
+        <dl>
+          <div class="contact-row">
+            <dt>Kontakt</dt>
+            <dd>Pascal Weihrauch</dd>
+          </div>
+          <div class="contact-row">
+            <dt>E-Mail</dt>
+            <dd><a href="mailto:pascal@riverland-int.com">pascal@riverland-int.com</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Termin</dt>
+            <dd><a href="https://pascalweihrauch.de/termin/" target="_blank" rel="noopener">Erstgespräch vereinbaren</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Website</dt>
+            <dd><a href="https://pascalweihrauch.de/" target="_blank" rel="noopener">pascalweihrauch.de</a></dd>
           </div>
         </dl>
       </div>
